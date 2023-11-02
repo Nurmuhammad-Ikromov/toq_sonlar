@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url("./images/bgi.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main {
+    background-color: #fff;
+    padding: 10px 40px;
+    margin-top: 150px;
+    border-radius: 5px;
+}
+
+.input-group {
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type='number'] {
+
+    width: 300px;
+    padding: 7px;
+    border-radius: 5px;
+    border: 1px solid dodgerblue;
+
+}
+
+.result {
+    margin-top: 10px;
+}
+
+.result label {
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
+.header {
+    text-align: center;
+}
+
+.btn {
+    display: block;
+    background-color: dodgerblue;
+    color: #fff;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 5px;
+    margin-left: auto;
+}
+
+.author {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-style: italic;
+}
+
+span {
+    color: red;
+}
