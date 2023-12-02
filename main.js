@@ -15,10 +15,10 @@ function factorize(number) {
 }
 
 function calculate() {
+	factors = [];
 	let numberInput = document.getElementById('number-input');
 	let resultLabel = document.getElementById('result-label');
 	let text = document.getElementById('text');
-
 	let number = parseInt(numberInput.value);
 
 	if (number < 2) {
