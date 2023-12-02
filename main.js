@@ -1,5 +1,5 @@
+let factors = [];
 function factorize(number) {
-	let factors = [];
 	let divisor = 2;
 
 	while (number > 1) {
@@ -17,6 +17,7 @@ function factorize(number) {
 function calculate() {
 	let numberInput = document.getElementById('number-input');
 	let resultLabel = document.getElementById('result-label');
+	let text = document.getElementById('text');
 
 	let number = parseInt(numberInput.value);
 
@@ -27,6 +28,9 @@ function calculate() {
 		let primeFactors = factorize(number);
 		resultLabel.textContent = number + ' = ' + primeFactors.join(' * ');
 	}
+	if (factors.length == 1) {
+		text.textContent = ' Bu son tub son!';
+	} else text.textContent = ' Bu son murakkab son!';
 }
 
 let calculateButton = document.getElementById('calculate-button');
