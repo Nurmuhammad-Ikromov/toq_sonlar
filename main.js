@@ -27,10 +27,10 @@ function calculate() {
 	} else {
 		let primeFactors = factorize(number);
 		resultLabel.textContent = number + ' = ' + primeFactors.join(' * ');
+		if (factors.length == 1) {
+			text.textContent = ' Bu son tub son!';
+		} else text.textContent = ' Bu son murakkab son!';
 	}
-	if (factors.length == 1) {
-		text.textContent = ' Bu son tub son!';
-	} else text.textContent = ' Bu son murakkab son!';
 }
 
 let calculateButton = document.getElementById('calculate-button');
